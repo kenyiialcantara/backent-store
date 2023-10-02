@@ -25,11 +25,11 @@ const options = {
 };
 app.use(cors(options));
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('HOla mi server en express');
 });
 
-app.get('/nuevaruta', (req, res) => {
+app.get('/api/nuevaruta', (req, res) => {
   res.send('Hoa soy nueva ruta');
 });
 
